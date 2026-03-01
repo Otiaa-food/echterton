@@ -788,6 +788,24 @@ section {
     gap: var(--spacing-md);
 }
 
+.footer-instagram-link {
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.footer-instagram-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: var(--transition);
+}
+
+.footer-instagram-link:hover .footer-instagram-icon {
+    transform: scale(1.1);
+    filter: brightness(0) invert(0.8);
+}
+
 .footer-nav a {
     color: var(--color-medium-gray);
     font-size: 0.9rem;
