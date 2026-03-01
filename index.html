@@ -14,11 +14,6 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="hero" role="banner">
-            <video autoplay muted loop playsinline class="hero-video-background">
-                <source src="videos/Kids_playing.mp4" type="video/mp4">
-                Ihr Browser unterstützt das Video-Element nicht.
-            </video>
-            <div class="hero-overlay"></div>
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">
@@ -34,6 +29,15 @@
                         <a href="#leistungen" class="btn btn-secondary">Leistungen</a>
                     </div>
                 </div>
+                <div class="hero-visual">
+                    <video autoplay muted loop playsinline class="hero-video">
+                        <source src="videos/Kids_playing.mp4" type="video/mp4">
+                        Ihr Browser unterstützt das Video-Element nicht.
+                    </video>
+                    <div class="video-caption">
+                        <p>Wie wichtig echter Ton wirklich ist</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -41,7 +45,7 @@
         <section class="logo-section">
             <div class="container">
                 <div class="logo-container">
-                    <img src="images/Logo_schwarze_schrift_.png" alt="Echter Ton Logo" class="section-logo">
+                    <img src="images/Logo_schwarze_schrift.png" alt="Echter Ton Logo" class="section-logo">
                 </div>
             </div>
         </section>
@@ -51,8 +55,8 @@
             <nav class="nav" role="navigation">
                 <div class="nav-container">
                     <div class="nav-logo">
-                        <img src="images/Logo_schwarze_schrift_.png" alt="Echter Ton Logo" class="logo-image">
-                    </div>
+                            <img src="images/Logo_schwarze_schrift_.png" alt="Echter Ton Logo" class="logo-image">
+                        </div>
                     <ul class="nav-menu">
                         <li><a href="#positionierung" class="nav-link">Positionierung</a></li>
                         <li><a href="#expertise" class="nav-link">Expertise</a></li>
@@ -61,6 +65,9 @@
                         <li><a href="#crew" class="nav-link">Crew</a></li>
                         <li><a href="#referenzen" class="nav-link">Referenzen</a></li>
                         <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                        <li><a href="https://www.instagram.com/echterton/" target="_blank" class="nav-link instagram-link">
+                            <img src="images/instagram-icon.svg" alt="Instagram" class="instagram-icon">
+                        </a></li>
                     </ul>
                     <button class="nav-toggle" aria-label="Menü öffnen">
                         <span></span>
@@ -106,7 +113,9 @@
                     <div class="expertise-column">
                         <div class="expertise-header">
                             <h3>Was KI kann</h3>
-                            <div class="expertise-icon ai-icon">🤖</div>
+                            <div class="expertise-image">
+                                <img src="images/Ki_.jpg" alt="KI Fähigkeiten">
+                            </div>
                         </div>
                         <ul class="expertise-list">
                             <li>Grundlegende Audio-Bearbeitung</li>
@@ -123,7 +132,9 @@
                     <div class="expertise-column">
                         <div class="expertise-header">
                             <h3>Was der Mensch kann</h3>
-                            <div class="expertise-icon human-icon">🎧</div>
+                            <div class="expertise-image">
+                                <img src="images/Mensch.jpg" alt="Menschliche Expertise">
+                            </div>
                         </div>
                         <ul class="expertise-list">
                             <li>Kreatives Sound Design mit Charakter</li>
@@ -150,32 +161,44 @@
                 </div>
                 <div class="leistungen-grid">
                     <div class="leistung-item">
-                        <div class="leistung-icon">🎵</div>
+                        <div class="leistung-image">
+                            <img src="images/Sounddesign.jpg" alt="Sound Design">
+                        </div>
                         <h3>Sound Design</h3>
                         <p>Maßgeschneiderte Klangerlebnisse für Film, Games und multimediale Projekte. Von atmosphärischen Umgebungen bis zu prägnanten UI-Sounds.</p>
                     </div>
                     <div class="leistung-item">
-                        <div class="leistung-icon">📚</div>
+                        <div class="leistung-image">
+                            <img src="images/Hörbuch.jpg" alt="Hörbuch-Produktion">
+                        </div>
                         <h3>Hörbuch-Produktion</h3>
                         <p>Professionelle Vertonung von Romanen, Sachbüchern und Fachliteratur. Von der Sprecher-Casting bis zur finalen Masterierung.</p>
                     </div>
                     <div class="leistung-item">
-                        <div class="leistung-icon">🎙️</div>
+                        <div class="leistung-image">
+                            <img src="images/Podcast.jpg" alt="Podcast-Produktion">
+                        </div>
                         <h3>Podcast-Produktion</h3>
                         <p>Komplette Podcast-Erstellung: Konzeption, Aufnahme, Schnitt, Mixing und Veröffentlichung. Für Unternehmens- und Privat-Podcasts.</p>
                     </div>
                     <div class="leistung-item">
-                        <div class="leistung-icon">🎬</div>
+                        <div class="leistung-image">
+                            <img src="images/filmvertonung.jpg" alt="Filmvertonung">
+                        </div>
                         <h3>Filmvertonung</h3>
                         <p>Professionelle Audio-Postproduktion für Imagefilme, Werbespots und Dokumentationen. Dialog-Editing, Foley, Musik und Effekte.</p>
                     </div>
                     <div class="leistung-item">
-                        <div class="leistung-icon">🔧</div>
+                        <div class="leistung-image">
+                            <img src="images/audiopost.jpg" alt="Audio-Postproduktion">
+                        </div>
                         <h3>Audio-Postproduktion</h3>
                         <p>Mastering, Loudness-Optimierung, Format-Konvertierung und Qualitätskontrolle für alle Audio-Formate und Plattformen.</p>
                     </div>
                     <div class="leistung-item">
-                        <div class="leistung-icon">🎯</div>
+                        <div class="leistung-image">
+                            <img src="images/Konz.jpg" alt="Beratung & Konzeption">
+                        </div>
                         <h3>Beratung & Konzeption</h3>
                         <p>Strategische Beratung für Ihre Audio-Kommunikation. Technische Planung, Budget-Erstellung und Projekt-Management.</p>
                     </div>
@@ -193,31 +216,31 @@
                 <div class="gear-grid">
                     <div class="gear-item">
                         <div class="gear-image-placeholder">
-                            <img src="https://via.placeholder.com/400x300/f8f8f8/333333?text=Neumann+U87" alt="Neumann U87 Mikrofon">
+                            <img src="images/Warm_Audio_WA-8000.jpg" alt="Warm Audio WA-8000 Mikrofon">
                         </div>
-                        <h3>Neumann U87</h3>
-                        <p>Der Klassiker für Gesangs- und Instrumentalaufnahmen</p>
+                        <h3>Warm Audio WA-8000</h3>
+                        <p>Professionelles Großmembran-Mikrofon für Gesangs- und Instrumentalaufnahmen</p>
                     </div>
                     <div class="gear-item">
                         <div class="gear-image-placeholder">
-                            <img src="https://via.placeholder.com/400x300/f8f8f8/333333?text=SSL+Console" alt="SSL Mischpult">
+                            <img src="images/Horch_MP_NVR.jpg" alt="Horch MP NVR Mic Preamp">
                         </div>
-                        <h3>SSL Mischpult</h3>
-                        <p>Industry-Standard für professionelles Mixing</p>
+                        <h3>Horch MP NVR</h3>
+                        <p>High-End Mikrofon-Vorverstärker für kristallklare Signale</p>
                     </div>
                     <div class="gear-item">
                         <div class="gear-image-placeholder">
-                            <img src="https://via.placeholder.com/400x300/f8f8f8/333333?text=Genelec+Monitore" alt="Genelec Studio Monitore">
+                            <img src="images/Warm_Audio_WA-1B.jpg" alt="Warm Audio WA-1B Kompressor">
                         </div>
-                        <h3>Genelec 8040</h3>
-                        <p>Präzise Studio-Monitore für neutrale Wiedergabe</p>
+                        <h3>Warm Audio WA-1B</h3>
+                        <p>Optischer Kompressor für präzise Dynamik-Kontrolle</p>
                     </div>
                     <div class="gear-item">
                         <div class="gear-image-placeholder">
-                            <img src="https://via.placeholder.com/400x300/f8f8f8/333333?text=Pro+Tools+HD" alt="Pro Tools HD">
+                            <img src="images/JBL_705P.jpg" alt="JBL 705P Monitore">
                         </div>
-                        <h3>Pro Tools HD</h3>
-                        <p>Professionelle DAW für komplexe Produktionen</p>
+                        <h3>JBL 705P</h3>
+                        <p>Professionelle Studio-Monitore für exaktes Abmischen</p>
                     </div>
                 </div>
             </div>
@@ -233,27 +256,27 @@
                 <div class="crew-grid">
                     <div class="crew-item">
                         <div class="crew-image-placeholder">
-                            <img src="https://via.placeholder.com/300x300/f8f8f8/333333?text=Head+1" alt="Teammitglied">
+                            <img src="images/Dias.jpg" alt="Stavros Hassulas">
                         </div>
-                        <h3>Max Mustermann</h3>
+                        <h3>Stavros Hassulas</h3>
                         <p class="crew-role">Head of Audio Production</p>
-                        <p class="crew-bio">15+ Jahre Erfahrung in Film- und Musikproduktion. Spezialist für immersive Audio-Erlebnisse.</p>
+                        <p class="crew-bio">10+ Jahre Erfahrung in Audio Produktion, Dolby Atmos zertifizierter Mastering Engineer.</p>
                     </div>
                     <div class="crew-item">
                         <div class="crew-image-placeholder">
-                            <img src="https://via.placeholder.com/300x300/f8f8f8/333333?text=Head+2" alt="Teammitglied">
+                            <img src="images/Benza.jpg" alt="Benjamin Noussi">
                         </div>
-                        <h3>Erika Beispiel</h3>
-                        <p class="crew-role">Senior Sound Designer</p>
-                        <p class="crew-bio">Kreative Visionärin mit Fokus auf innovative Klangwelten und emotionale Storytelling durch Ton.</p>
-                    </div>
-                    <div class="crew-item">
-                        <div class="crew-image-placeholder">
-                            <img src="https://via.placeholder.com/300x300/f8f8f8/333333?text=Head+3" alt="Teammitglied">
-                        </div>
-                        <h3>Thomas Test</h3>
+                        <h3>Benjamin Noussi</h3>
                         <p class="crew-role">Audio Engineer</p>
-                        <p class="crew-bio">Technischer Experte für höchste Audioqualität. Meister der Postproduktion und Mastering.</p>
+                        <p class="crew-bio">SAE Audio Engineer Diploma, 5+ Jahre Erfahrung in Audio Produktion.</p>
+                    </div>
+                    <div class="crew-item">
+                        <div class="crew-image-placeholder">
+                            <img src="images/Johannes.jpg" alt="Johannes Schoebel">
+                        </div>
+                        <h3>Johannes Schoebel</h3>
+                        <p class="crew-role">Senior Sound Designer</p>
+                        <p class="crew-bio">Kreative Visionär mit Fokus auf innovative Klangwelten und emotionale Storytelling durch Ton.</p>
                     </div>
                 </div>
             </div>
@@ -269,32 +292,32 @@
                 <div class="referenzen-grid">
                     <div class="referenz-item">
                         <div class="referenz-logo-placeholder">
-                            <img src="https://via.placeholder.com/200x100/f8f8f8/333333?text=Logo+1" alt="Referenz Logo 1">
+                            <img src="images/ref1.jpg" alt="Referenz 1">
                         </div>
                     </div>
                     <div class="referenz-item">
                         <div class="referenz-logo-placeholder">
-                            <img src="https://via.placeholder.com/200x100/f8f8f8/333333?text=Logo+2" alt="Referenz Logo 2">
+                            <img src="images/ref2.jpg" alt="Referenz 2">
                         </div>
                     </div>
                     <div class="referenz-item">
                         <div class="referenz-logo-placeholder">
-                            <img src="https://via.placeholder.com/200x100/f8f8f8/333333?text=Logo+3" alt="Referenz Logo 3">
+                            <img src="images/ref3.jpg" alt="Referenz 3">
                         </div>
                     </div>
                     <div class="referenz-item">
                         <div class="referenz-logo-placeholder">
-                            <img src="https://via.placeholder.com/200x100/f8f8f8/333333?text=Logo+4" alt="Referenz Logo 4">
+                            <img src="images/ref4.jpg" alt="Referenz 4">
                         </div>
                     </div>
                     <div class="referenz-item">
                         <div class="referenz-logo-placeholder">
-                            <img src="https://via.placeholder.com/200x100/f8f8f8/333333?text=Logo+5" alt="Referenz Logo 5">
+                            <img src="images/ref5.jpg" alt="Referenz 5">
                         </div>
                     </div>
                     <div class="referenz-item">
                         <div class="referenz-logo-placeholder">
-                            <img src="https://via.placeholder.com/200x100/f8f8f8/333333?text=Logo+6" alt="Referenz Logo 6">
+                            <img src="images/ref6.jpg" alt="Referenz 6">
                         </div>
                     </div>
                 </div>
@@ -380,9 +403,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <div class="footer-logo-text">
-                        <span class="logo-echter">echter</span><span class="logo-ton">Ton</span>
-                    </div>
+                    <img src="images/Logo_weisse_schrift.png" alt="Echter Ton Logo" class="footer-logo-image">
                     <p>High-End Audio- & Medienproduktion Stuttgart</p>
                 </div>
                 <div class="footer-legal">
