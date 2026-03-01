@@ -305,7 +305,7 @@ a:hover {
 }
 
 .section-logo {
-    height: 120px;
+    height: 200px;
     width: auto;
     opacity: 0.8;
     transition: var(--transition);
